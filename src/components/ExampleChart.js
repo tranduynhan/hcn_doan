@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
+// import { useState } from 'react';
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 const ExampleChart = (props) => {
     const { children } = props;
-    const [opacity, setOpacity] = useState({
-        uv: 1,
-        pv: 1,
-    })
-    const handleMouseEnter = (o) => {
-        const { dataKey } = o;
-        const { opacityTemp } = opacity;
-        setOpacity({ ...opacityTemp, [dataKey]: 0.5 });
-    };
+    // const [opacity, setOpacity] = useState({
+    //     uv: 1,
+    //     pv: 1,
+    // })
+    // const handleMouseEnter = (o) => {
+    //     const { dataKey } = o;
+    //     const { opacityTemp } = opacity;
+    //     setOpacity({ ...opacityTemp, [dataKey]: 0.5 });
+    // };
 
-    const handleMouseLeave = (o) => {
-        const { dataKey } = o;
-        const { opacityTemp } = opacity;
-        setOpacity({ ...opacityTemp, [dataKey]: 1 });
-    };
+    // const handleMouseLeave = (o) => {
+    //     const { dataKey } = o;
+    //     const { opacityTemp } = opacity;
+    //     setOpacity({ ...opacityTemp, [dataKey]: 1 });
+    // };
 
     return (
         <div >

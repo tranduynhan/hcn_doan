@@ -63,10 +63,9 @@ const Action = (props) => {
         console.log(msg);
     }
 
-    // useInterval(() => {
-    //     // Your custom logic here
-    //     handleSend();
-    // }, 1000);
+    useInterval(() => {
+        handleSend();
+    }, 1000);
     // useEffect(() => {
 
     // }, [fan, light]);

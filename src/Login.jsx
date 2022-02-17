@@ -16,9 +16,12 @@ const Login = (props) => {
             const tempDb = await getDocs(usersCollectionRef);
             const mainDb = tempDb.docs.map(doc => doc.data());
             setData(mainDb);
+
         }
         getUsers();
+        //eslint-disable-next-line
     }, []);
+
     const handleValidate = () => {
         const tempValid = {
             username: valid.username,
