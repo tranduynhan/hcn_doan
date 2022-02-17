@@ -20,7 +20,7 @@ const onConnect = () => //sự kiên kết nối thành công
     clientTemp.subscribe("Test");
 }
 var options = {
-    useSSL: false,
+    useSSL: true,
     userName: "",
     password: "",
     onSuccess: onConnect,
